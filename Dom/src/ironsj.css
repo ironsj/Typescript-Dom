@@ -1,0 +1,120 @@
+body {
+  background-color: #1a1a1d;
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h1 {
+  color: #950740;
+}
+
+/*CSS selectors containing id (#something) or class name (.something)*/
+.subheaders {
+  padding-top: 20px;
+}
+
+/*CSS selectors expressing sibling relationship such as div ~ p*/
+h1 ~ .subheaders {
+  color: white;
+}
+
+/*CSS selectors expressing immediate sibling relationship such as div + p*/
+.subheaders + * {
+  color: #950740;
+}
+
+/*CSS selectors expressing ancestor/descendant relationship such as div p*/
+li li {
+  color: white;
+}
+
+/*CSS selectors expressing immediate parent/child relationship such as div > p*/
+#infoTable > tr {
+  background-color: black;
+}
+
+/*CSS selectors 4 different pseudo-classes of your preference (:nth-of-type)*/
+table:nth-of-type(1) td {
+  padding: 10px;
+}
+
+/*CSS selectors 4 different pseudo-classes of your preference (:nth-child), 5-token (or more) CSS selectors combining any of the above syntactic elements, such as div + p:first-child > b.math*/
+table tr:nth-child(4) > td > ul {
+  padding-inline-start: 0;
+}
+
+ol > li > ul {
+  margin-left: 25%;
+  margin-bottom: 15px;
+}
+
+/*CSS selectors containing attribute ([something])*/
+table[id="courseTable"] tr:nth-child(even) {
+  background-color: #c3073f;
+  color: #edf5e1;
+}
+
+/*CSS selectors 4 different pseudo-classes of your preference (:first-child), 5-token (or more) CSS selectors combining any of the above syntactic elements, such as div + p:first-child > b.math*/
+table[id="courseTable"] > tr:first-child ~ tr:nth-child(odd) {
+  background-color: white;
+  color: #c3073f;
+}
+
+/*CSS selectors containing id (#something) or class name (.something)*/
+#courseTable th {
+  background-color: #6f2232;
+  color: white;
+}
+
+#courseTable {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+#infoTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul,
+ol {
+  display: table;
+  margin: 0 auto;
+}
+
+a {
+  margin-top: 50px;
+}
+
+a:link {
+  color: royalblue;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:hover {
+  background-color: yellow;
+  color: #4e4e50;
+}
+
+a:active {
+  color: #4e4e50;
+  background-color: #950740;
+}
+
+table,
+th,
+td {
+  border: 3px solid #4e4e50;
+}
+
+div {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
